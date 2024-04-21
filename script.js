@@ -42,6 +42,10 @@ function eventFn(e){
     e.stopPropagation()
     
     if(e.type === "click"){
+        if(e.target.tagName !== "BUTTON"){
+            return;
+        }
+
         if(e.target.textContent === "Submit"){
             const cardcontainer = tagGenrator("div","class","cardContainer",mainContainer)
     
