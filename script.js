@@ -55,7 +55,8 @@ function eventFn(e){
             let cardName = tagGenrator("p","class","cardName",card,null,null,inputName.value);
             let cardQuntity = tagGenrator("p","class","cardQuntity",card,null,null,`${inputQuntity.value} gm`); 
 
-            inputMrp.value = inputPrice.value = inputPrice.value = inputName.value = inputQuntity.value = ""     
+            inputMrp.value = inputPrice.value = inputPrice.value = inputName.value = inputQuntity.value = ""  
+            console.dir(document.body)   
         }
         
         if(e.target.textContent === "Edit"){
@@ -113,3 +114,5 @@ function eventFn(e){
     }
     
 }
+
+
